@@ -11,5 +11,16 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     line-height: 1.4;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #171717;
+  }
+
+  a {
+    text-decoration: none;
+    color: #171717;
+    cursor: pointer;
+
+    &:visited { color: #171717; }
+    &:active { color: #171717; }
   }
 `
