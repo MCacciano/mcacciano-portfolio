@@ -7,7 +7,7 @@ const Navigation = () => {
     <Nav>
       <div>
         <Logo>
-          <GLink to="/">MC</GLink>
+          <GLink to="/">Michael Cacciano</GLink>
         </Logo>
         <Ul>
           <Li>
