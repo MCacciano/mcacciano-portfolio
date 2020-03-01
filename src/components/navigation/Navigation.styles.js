@@ -8,13 +8,19 @@ export const Nav = styled.nav`
   width: 100%;
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /* background: #000;
+  color: #fff; */
 
   div {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    margin-top: 1rem;
+    padding: 20px 50px;
     font-weight: 400;
   }
 `
@@ -22,6 +28,11 @@ export const Nav = styled.nav`
 export const GLink = styled(animated(Link))`
   display: block;
   padding: 15px 20px;
+  color: #f7f7f7;
+
+  &:active {
+    color: #f7f7f7;
+  }
 
   &:visited {
     color: #f7f7f7;

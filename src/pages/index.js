@@ -2,12 +2,12 @@ import React from 'react'
 
 import SEO from '../components/seo'
 import MainLayout from '../components/main-layout/MainLayout'
-import Header from '../components/header/Header'
+import Hero from '../components/hero/Hero'
 
 const IndexPage = () => (
   <MainLayout>
     <SEO title="Home" />
-    <Header />
+    <Hero />
   </MainLayout>
 )
 

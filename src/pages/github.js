@@ -5,7 +5,7 @@ import MainLayout from '../components/main-layout/MainLayout'
 export default () => {
   return (
     <MainLayout>
-      <div>About</div>
+      <div>Github</div>
     </MainLayout>
   )
 }
