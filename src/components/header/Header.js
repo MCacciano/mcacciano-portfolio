@@ -2,42 +2,32 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 // components
-import PageTile from '../page-tile/PageTile'
+import Navigation from '../navigation/Navigation'
 
 // styled components
-import { StyledHeader, Nav, H1, Ul, Li, GLink, Container } from './Header.styles'
+import { HeroHeader, HeroContent, HeroTitle, HeroCopy, HeroTitleContainer, Span, Wrapper } from './Header.styles'
 
 const Header = ({ siteTitle }) => {
   return (
-    <StyledHeader>
-      <Nav>
-        <div>
-          <H1>
-            <GLink to="/">MC</GLink>
-          </H1>
-          <Ul>
-            <Li>
-              <GLink to="/">Home</GLink>
-            </Li>
-            <Li>
-              <GLink to="/">Work</GLink>
-            </Li>
-            <Li>
-              <GLink to="/">Blog</GLink>
-            </Li>
-          </Ul>
-        </div>
-      </Nav>
-      <Container>
-        <div>
-          <h2>Web Developer</h2>
-        </div>
-        {/* <PageTile title="Work" bg="./hero-1.jpg" />
-        <PageTile title="Github" bg="./github-tile.png" />
-        <PageTile title="Blog" />
-        <PageTile title="Contact" /> */}
-      </Container>
-    </StyledHeader>
+    <HeroHeader>
+      <Navigation />
+      <HeroContent>
+        <Wrapper>
+          <HeroTitleContainer>
+            <HeroTitle>
+              <Span mright="-20">W</Span>eb
+            </HeroTitle>
+            <HeroTitle mtop="-121" pleft="95">
+              <Span mright="-12">D</Span>eveloper
+            </HeroTitle>
+          </HeroTitleContainer>
+          <HeroCopy>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam commodi omnis blanditiis adipisci
+            voluptatem sit!
+          </HeroCopy>
+        </Wrapper>
+      </HeroContent>
+    </HeroHeader>
   )
 }
 

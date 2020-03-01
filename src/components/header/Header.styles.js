@@ -1,9 +1,6 @@
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import { animated } from 'react-spring'
-
-export const StyledHeader = styled.header`
+export const HeroHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +9,7 @@ export const StyledHeader = styled.header`
 
   background: url(./hero-2.jpg);
   background-size: cover;
+  background-position: top;
   position: relative;
   z-index: 1;
 
@@ -30,61 +28,91 @@ export const StyledHeader = styled.header`
   }
 `
 
-export const Nav = styled.nav`
-  /* background: rgba(0, 0, 0, 0.8); */
-  width: 100%;
+export const HeroContent = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-
-  div {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 1rem;
-    font-weight: 400;
-  }
-`
-
-export const GLink = styled(animated(Link))`
-  display: block;
-  padding: 15px 20px;
-
-  &:visited {
-    color: #f7f7f7;
-  }
-`
-
-export const H1 = styled.h1`
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-`
-
-export const Ul = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
-`
-
-export const Li = styled.li`
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-`
-
-export const Container = styled.div`
-  flex: 1;
+  align-items: flex-start;
+  height: 100%;
   width: 100%;
-  padding: 50px;
   color: #f7f7f7;
 
-  > div {
-    display: flex;
-    justify-content: center;
+  @media screen and (max-width: 1180px) {
+    align-items: center;
+  }
+`
 
-    h2 {
-      font-size: 4rem;
-      font-weight: 700;
-    }
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1180px) {
+    align-items: center;
+  }
+`
+
+export const HeroTitleContainer = styled.div`
+  width: 40vw;
+  min-width: 600px;
+
+  @media screen and (max-width: 660px) {
+    width: 75vw;
+    min-width: max-content;
+  }
+`
+
+export const HeroTitle = styled.h1`
+  font-size: 6rem;
+  font-weight: 400;
+  margin-top: ${({ mtop }) => `${mtop}px`};
+  padding-left: ${({ pleft }) => `${pleft}px`};
+
+  @media screen and (max-width: 660px) {
+    margin-top: ${({ mtop }) => `${parseInt(mtop) + 21}px`};
+    font-size: 4.25rem;
+  }
+
+  @media screen and (max-width: 660px) {
+    margin-top: ${({ mtop }) => `${parseInt(mtop) + 41}px`};
+    font-size: 2.25rem;
+  }
+`
+
+export const Span = styled.span`
+  font-size: 12rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-right: ${({ mright }) => `${mright}px`};
+
+  @media screen and (max-width: 660px) {
+    font-size: 10rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 8rem;
+  }
+`
+
+export const HeroCopy = styled.p`
+  font-size: 2rem;
+  font-weight: 100;
+  width: 40vw;
+  min-width: 600px;
+
+  @media screen and (max-width: 1180px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 660px) {
+    font-size: 1.75rem;
+    width: 75vw;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 1.5rem;
+    width: 75vw;
+    min-width: 300px;
   }
 `
