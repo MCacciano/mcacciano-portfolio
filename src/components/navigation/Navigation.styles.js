@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { animated } from 'react-spring'
 
 export const Nav = styled.nav`
-  /* background: rgba(0, 0, 0, 0.8); */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12,8 +11,6 @@ export const Nav = styled.nav`
   top: 0;
   left: 0;
   z-index: 2;
-  /* background: #000;
-  color: #fff; */
 
   div {
     display: flex;
@@ -48,6 +45,10 @@ export const Ul = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
+
+  @media screen and (max-width: 660px) {
+    display: none;
+  }
 `
 
 export const Li = styled.li`

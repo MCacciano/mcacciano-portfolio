@@ -4,7 +4,7 @@ import React from 'react'
 // styled components
 import { HeroContainer, HeroCopy, Span } from './Hero.styles'
 
-const Hero = ({ siteTitle }) => {
+const Hero = () => {
   return (
     <HeroContainer>
       <HeroCopy>
@@ -33,14 +33,6 @@ const Hero = ({ siteTitle }) => {
       </HeroCopy>
     </HeroContainer>
   )
-}
-
-Hero.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Hero.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Hero

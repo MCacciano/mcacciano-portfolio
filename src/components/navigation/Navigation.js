@@ -11,13 +11,13 @@ const Navigation = () => {
         </Logo>
         <Ul>
           <Li>
-            <GLink to="/">Home</GLink>
+            <GLink to="/work">Work</GLink>
           </Li>
           <Li>
-            <GLink to="/">Work</GLink>
+            <GLink to="/blog">Blog</GLink>
           </Li>
           <Li>
-            <GLink to="/">Blog</GLink>
+            <GLink to="/about">About</GLink>
           </Li>
         </Ul>
       </div>

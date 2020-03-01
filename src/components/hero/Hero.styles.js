@@ -67,7 +67,6 @@ export const Span = styled.span`
     left: 10%;
     width: ${({ bgwidth }) => (bgwidth ? `${bgwidth}%` : '90%')};
     height: 40%;
-    /* background: rgba(132, 169, 140, 0.4); */
     background: ${({ bg }) => bg};
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     z-index: -1;
