@@ -19,7 +19,7 @@ export const Nav = styled.nav`
   padding-top: 1rem;
 `
 
-export const GLink = styled(Link)`
+export const GLink = styled(animated(Link))`
   display: block;
   padding: 12px 15px;
 `

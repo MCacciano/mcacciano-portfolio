@@ -8,14 +8,19 @@ import { useSpring, animated } from 'react-spring'
 const Header = ({ siteTitle }) => {
   const tester = useSpring({
     transform: 'translateX(0)',
-    from: { transform: 'translateX(-50px)' },
+    opacity: 1,
+    from: { transform: 'translateX(-50px)', opacity: 0 },
+    config: {
+      duration: 500,
+      ease: 'easeInOut',
+    },
   })
 
   return (
     <StyledHeader>
       <Nav>
         <H1>
-          <GLink>{siteTitle}</GLink>
+          <GLink style={tester}>{siteTitle}</GLink>
         </H1>
         <Ul>
           <Li>
