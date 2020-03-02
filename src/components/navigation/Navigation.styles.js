@@ -19,6 +19,10 @@ export const Nav = styled.nav`
     max-width: 1200px;
     padding: 20px 50px;
     font-weight: 400;
+
+    @media screen and (max-width: 660px) {
+      padding: 20px;
+    }
   }
 `
 
@@ -45,14 +49,28 @@ export const Ul = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
-
-  @media screen and (max-width: 660px) {
-    display: none;
-  }
 `
 
 export const Li = styled.li`
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
+
+  @media screen and (max-width: 660px) {
+    &:not(:last-child) {
+      display: none;
+    }
+  }
+`
+
+export const BurgerMenu = styled.i`
+  color: #f7f7f7;
+  cursor: pointer;
+  padding: 5px;
+
+  display: none;
+
+  @media screen and (max-width: 660px) {
+    display: inline-block;
+  }
 `

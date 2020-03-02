@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Nav, Logo, Ul, Li, GLink } from './Navigation.styles'
+import { Nav, Logo, Ul, Li, GLink, BurgerMenu } from './Navigation.styles'
 
 const Navigation = () => {
   return (
@@ -18,6 +18,9 @@ const Navigation = () => {
           </Li>
           <Li>
             <GLink to="/about">About</GLink>
+          </Li>
+          <Li>
+            <BurgerMenu className="fa fa-bars fa-2x" />
           </Li>
         </Ul>
       </div>
