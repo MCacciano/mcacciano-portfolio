@@ -18,7 +18,6 @@ export const Nav = styled.nav`
     width: 100%;
     max-width: 1200px;
     padding: 20px 50px;
-    font-weight: 400;
 
     @media screen and (max-width: 660px) {
       padding: 20px;
@@ -30,6 +29,7 @@ export const GLink = styled(animated(Link))`
   display: block;
   padding: 15px 20px;
   color: #f7f7f7;
+  font-weight: 400px;
 
   &:active {
     color: #f7f7f7;
@@ -53,7 +53,6 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
   text-transform: uppercase;
-  font-weight: 700;
   letter-spacing: 1px;
 
   @media screen and (max-width: 660px) {
@@ -67,6 +66,7 @@ export const BurgerMenu = styled.i`
   color: #f7f7f7;
   cursor: pointer;
   padding: 5px;
+  padding-right: 20px;
 
   display: none;
 
