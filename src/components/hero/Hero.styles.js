@@ -69,6 +69,7 @@ export const SocialList = styled.ul`
   width: 100%;
   max-width: 300px;
   justify-content: space-between;
+  margin: 40px 0;
   z-index: 2;
 `
 
