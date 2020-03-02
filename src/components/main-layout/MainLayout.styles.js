@@ -15,6 +15,10 @@ export const GlobalStyles = createGlobalStyle`
     color: #171717;
   }
 
+  ul {
+    list-style: none;
+  }
+
   a {
     text-decoration: none;
     color: #171717;

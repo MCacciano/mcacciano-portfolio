@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { Link } from 'gatsby'
 
 const growRight = keyframes`
   from {
@@ -12,6 +13,7 @@ const growRight = keyframes`
 
 export const HeroContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -36,7 +38,43 @@ export const HeroContainer = styled.div`
     left: 0;
     z-index: 1;
   }
+
+  i {
+    z-index: 2;
+    border-radius: 50%;
+    color: #f7f7f7;
+    padding: 10px 12px;
+    border: 1px solid #f7f7f7;
+
+    &.github {
+      background: rgba(26, 23, 23, 1);
+    }
+
+    &.twitter {
+      background: rgba(29, 161, 242, 1);
+    }
+
+    &.linkedin {
+      background: rgba(0, 115, 176, 1);
+    }
+
+    &.instagram {
+      background: rgba(146, 63, 151, 1);
+    }
+  }
 `
+
+export const SocialList = styled.ul`
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  justify-content: space-between;
+  z-index: 2;
+`
+
+export const SocialListItem = styled.li``
+
+export const SocialLink = styled(Link)``
 
 export const HeroCopy = styled.p`
   font-size: 2.75rem;
