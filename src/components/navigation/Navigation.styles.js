@@ -12,6 +12,8 @@ export const Nav = styled.nav`
   left: 0;
   z-index: 2;
 
+  background: rgba(0, 0, 0, 0.4);
+
   div {
     display: flex;
     justify-content: space-between;

@@ -5,53 +5,37 @@ import React from 'react'
 import { HeroContainer, HeroCopy, Span, SocialList, SocialListItem, SocialLink } from './Hero.styles'
 // rgba(226, 192, 68, 0.5)
 const Hero = () => {
+  const SOCIAL_LINKS = [
+    { name: 'github', url: 'https://www.github.com/mcacciano' },
+    { name: 'twitter', url: 'https://www.twitter.com/king_kooka' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/michaelcacciano/' },
+  ]
+
   return (
     <HeroContainer>
       <HeroCopy>
-        <Span isLarge={true} fontSize="4" bgwidth="85" bg="rgba(21, 122, 180, .7)">
+        <Span isLarge={true} fontSize="4">
           Front{' '}
         </Span>
-        <Span isLarge={true} fontSize="4" bgwidth="85" bg="rgba(21, 122, 180, .7)">
+        <Span isLarge={true} fontSize="4">
           End{' '}
         </Span>
-        <Span isLarge={true} fontSize="4" bgwidth="85" bg="rgba(21, 122, 180, .7)">
+        <Span isLarge={true} fontSize="4">
           Developer{' '}
         </Span>
-        with a{' '}
-        <Span fontSize="3.25" bgwidth="85" bg="rgba(21, 122, 180, .7)">
-          passion{' '}
-        </Span>
-        for creating{' '}
-        <Span fontSize="3.25" bgwidth="85" bg="rgba(21, 122, 180, .7)">
-          cool{' '}
-        </Span>
-        and{' '}
-        <Span fontSize="3.25" bgwidth="85" bg="rgba(21, 122, 180, .7)">
-          simplistic{' '}
-        </Span>
+        with a <Span fontSize="3.25">passion </Span>
+        for creating <Span fontSize="3.25">cool </Span>
+        and <Span fontSize="3.25">simplistic </Span>
         things on the web
       </HeroCopy>
       <SocialList>
-        <SocialListItem>
-          <SocialLink to="/">
-            <i className="fab fa-github fa-2x github" />
-          </SocialLink>
-        </SocialListItem>
-        <SocialListItem>
-          <SocialLink to="/">
-            <i className="fab fa-twitter fa-2x twitter" />
-          </SocialLink>
-        </SocialListItem>
-        <SocialListItem>
-          <SocialLink to="/">
-            <i className="fab fa-linkedin fa-2x linkedin" />
-          </SocialLink>
-        </SocialListItem>
-        <SocialListItem>
-          <SocialLink to="/">
-            <i className="fab fa-instagram fa-2x instagram" />
-          </SocialLink>
-        </SocialListItem>
+        {SOCIAL_LINKS.map(({ name, url }) => (
+          <SocialListItem key={name}>
+            <SocialLink href={url} target="_blank">
+              <i className={`fab fa-${name} fa-2x ${name}`} />
+            </SocialLink>
+          </SocialListItem>
+        ))}
       </SocialList>
     </HeroContainer>
   )

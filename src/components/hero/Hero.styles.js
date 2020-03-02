@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components'
-import { Link } from 'gatsby'
 
 const growRight = keyframes`
   from {
@@ -75,7 +74,7 @@ export const SocialList = styled.ul`
 
 export const SocialListItem = styled.li``
 
-export const SocialLink = styled(Link)``
+export const SocialLink = styled.a``
 
 export const HeroCopy = styled.p`
   font-size: 2.75rem;
@@ -104,9 +103,9 @@ export const Span = styled.span`
     position: absolute;
     top: 48%;
     left: 10%;
-    width: ${({ bgwidth }) => (bgwidth ? `${bgwidth}%` : '90%')};
+    width: 85%;
     height: 40%;
-    background: ${({ bg }) => bg};
+    background: rgba(21, 122, 180, 0.7);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     z-index: -1;
     max-width: 0;
