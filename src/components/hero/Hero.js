@@ -8,25 +8,25 @@ const Hero = () => {
   return (
     <HeroContainer>
       <HeroCopy>
-        <Span isLarge={true} fontSize="4" bgwidth="85" bg="rgba(226, 192, 68, 0.5)">
+        <Span isLarge={true} fontSize="4" bgwidth="85" bg="rgba(21, 122, 180, .7)">
           Front{' '}
         </Span>
-        <Span isLarge={true} fontSize="4" bgwidth="85" bg="rgba(226, 192, 68, 0.5)">
+        <Span isLarge={true} fontSize="4" bgwidth="85" bg="rgba(21, 122, 180, .7)">
           End{' '}
         </Span>
-        <Span isLarge={true} fontSize="4" bgwidth="85" bg="rgba(226, 192, 68, 0.5)">
+        <Span isLarge={true} fontSize="4" bgwidth="85" bg="rgba(21, 122, 180, .7)">
           Developer{' '}
         </Span>
         with a{' '}
-        <Span fontSize="3.25" bgwidth="85" bg="rgba(226, 192, 68, 0.5)">
+        <Span fontSize="3.25" bgwidth="85" bg="rgba(21, 122, 180, .7)">
           passion{' '}
         </Span>
         for creating{' '}
-        <Span fontSize="3.25" bgwidth="85" bg="rgba(226, 192, 68, 0.5)">
+        <Span fontSize="3.25" bgwidth="85" bg="rgba(21, 122, 180, .7)">
           cool{' '}
         </Span>
         and{' '}
-        <Span fontSize="3.25" bgwidth="85" bg="rgba(226, 192, 68, 0.5)">
+        <Span fontSize="3.25" bgwidth="85" bg="rgba(21, 122, 180, .7)">
           simplistic{' '}
         </Span>
         things on the web
