@@ -8,7 +8,7 @@ export default function HTML(props) {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <script src="https://kit.fontawesome.com/c5caa35fb9.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c5caa35fb9.js" crossOrigin="anonymous"></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

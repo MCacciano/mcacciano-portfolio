@@ -21,12 +21,14 @@ export const HeroContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(./hero-2.jpg);
+  /* background: url(./hero-2.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: top; */
   z-index: 1;
 
-  &:after {
+  background: #f7f7f7;
+
+  /* &:after {
     content: '';
     display: block;
     width: 100%;
@@ -36,7 +38,7 @@ export const HeroContainer = styled.div`
     top: 0;
     left: 0;
     z-index: 1;
-  }
+  } */
 
   i {
     z-index: 2;
@@ -79,7 +81,7 @@ export const SocialLink = styled.a``
 export const HeroCopy = styled.p`
   font-size: 2.75rem;
   font-weight: 100;
-  color: #f7f7f7;
+  color: rgba(26, 23, 23, 1);
   text-align: center;
   z-index: 2;
   width: 100%;
@@ -105,7 +107,8 @@ export const Span = styled.span`
     left: 10%;
     width: 85%;
     height: 40%;
-    background: rgba(21, 122, 180, 0.7);
+    background: rgba(21, 122, 180, 0.8);
+    opacity: 0.7;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     z-index: -1;
     max-width: 0;

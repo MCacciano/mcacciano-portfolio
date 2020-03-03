@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   left: 0;
   z-index: 2;
 
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
 
   div {
     display: flex;
@@ -30,21 +30,21 @@ export const Nav = styled.nav`
 export const GLink = styled(animated(Link))`
   display: block;
   padding: 15px 20px;
-  color: #f7f7f7;
-  font-weight: 400px;
+  color: rgba(26, 23, 23, 1);
 
   &:active {
-    color: #f7f7f7;
+    color: rgba(26, 23, 23, 1);
   }
 
   &:visited {
-    color: #f7f7f7;
+    color: rgba(26, 23, 23, 1);
   }
 `
 
 export const Logo = styled.h1`
   font-size: 1.5rem;
   letter-spacing: 1px;
+  font-weight: 400;
 `
 
 export const Ul = styled.ul`
@@ -65,7 +65,7 @@ export const Li = styled.li`
 `
 
 export const BurgerMenu = styled.i`
-  color: #f7f7f7;
+  color: rgba(26, 23, 23, 1);
   cursor: pointer;
   padding: 5px;
   padding-right: 20px;

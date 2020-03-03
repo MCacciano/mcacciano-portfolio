@@ -11,9 +11,7 @@ export default ({ data }) => {
     return (
       <div>
         <h1>{post.title}</h1>
-        <BlockContent blocks={post._rawBody[0]} />
-        <BlockContent blocks={post._rawBody[1]} />
-        <BlockContent blocks={post._rawBody[2]} />
+        <BlockContent blocks={post._rawBody} />
       </div>
     )
   })
@@ -32,7 +30,6 @@ export const pageQuery = graphql`
       nodes {
         title
         _rawBody(resolveReferences: { maxDepth: 10 })
-        # _rawBody(resolveReferences: {maxDepth: 10})
       }
     }
   }
