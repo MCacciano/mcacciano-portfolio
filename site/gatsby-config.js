@@ -39,6 +39,23 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'fnhl40k6',
+        dataset: 'production',
+
+        // a token with read permissions is required
+        // if you have a private dataset
+        token:
+          'skHHgiHxdaWM3h9ANEkGGfC4zyAEfgXNz40Ks3KkOQow4qJHPQNFoyuxwJquufLrqn9DrsAVbRJfSkI9r7hMBTWl1wmaGIRH88vuTsyAIvPycBBVzjFldcKp6oNPazYJVpTI6ps1fMtNlFnlNhLUiaxsUQD9VsbHpLJSIwO0m6lgHO8xZg31',
+
+        // If the Sanity GraphQL API was deployed using `--tag <name>`,
+        // use `graphqlTag` to specify the tag name. Defaults to `default`.
+        graphqlTag: 'default',
+        watchMode: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
