@@ -28,7 +28,7 @@ const Hero = () => {
         and <Span fontSize="3.25">simplistic </Span>
         things on the web
       </HeroCopy>
-      <SocialList>
+      {/* <SocialList>
         {SOCIAL_LINKS.map(({ name, url }) => (
           <SocialListItem key={name}>
             <SocialLink href={url} target="_blank">
@@ -36,7 +36,7 @@ const Hero = () => {
             </SocialLink>
           </SocialListItem>
         ))}
-      </SocialList>
+      </SocialList> */}
     </HeroContainer>
   )
 }
